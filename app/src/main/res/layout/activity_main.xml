@@ -4,23 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
 
     <Button
         android:id="@+id/btn_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+
         android:text="Left Button"
-        android:onClick="leftClick"
+        android:onClick="buttonClick"
         />
 
     <Button
         android:id="@+id/btn_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+
         android:text="Right Button"
-        android:onClick="rightClick"
+        android:onClick="buttonClick"
         />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="34sp"></TextView>
 </LinearLayout>
