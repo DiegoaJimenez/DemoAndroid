@@ -3,6 +3,7 @@ package com.example.demoandroid
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 
@@ -39,6 +40,10 @@ class MainActivity : AppCompatActivity() {
             result.text = "has Perdido"
         }
         assignNumbers()
+
+        //leer el texto del usuario
+        val edit = findViewById<EditText>(R.id.inpText)
+        Toast.makeText(this,edit.text.toString(), Toast.LENGTH_SHORT).show()
     }
     fun rightClick(param1: View){
 
